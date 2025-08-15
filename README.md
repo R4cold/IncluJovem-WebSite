@@ -3,7 +3,7 @@
 ## 🇺🇸 English
 
 Hi there!  
-I created this website for the **Liga Jovem Challenge**.  
+I created this website for my**Liga Jovem Challenge** project.  
 I'm using **HTML, CSS, and JavaScript**.  
 
 **Disclaimer:** This website was built with some help from AI for responsiveness, design (I'm not that good, honestly), and JavaScript (I'm just getting started).  
@@ -15,7 +15,7 @@ I'm using **HTML, CSS, and JavaScript**.
 ## 🇧🇷 Português
 
 Oi!  
-Eu criei este site para o **Desafio Liga Jovem**.  
+Eu criei este site para o meu projeto do**Desafio Liga Jovem**.  
 Estou usando **HTML, CSS e JavaScript**.  
 
 **Aviso:** Este site foi feito com a ajuda de IA para responsividade, design (sou meio iniciante) e JavaScript (estou começando).  
