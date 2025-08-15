@@ -15,7 +15,7 @@ I'm using **HTML, CSS, and JavaScript**.
 ## 🇧🇷 Português
 
 Oi!  
-Eu criei este site para o meu projeto do**Desafio Liga Jovem**.  
+Eu criei este site para o meu projeto do **Desafio Liga Jovem**.  
 Estou usando **HTML, CSS e JavaScript**.  
 
 **Aviso:** Este site foi feito com a ajuda de IA para responsividade, design (sou meio iniciante) e JavaScript (estou começando).  
