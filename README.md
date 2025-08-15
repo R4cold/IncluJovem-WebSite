@@ -3,7 +3,7 @@
 ## 🇺🇸 English
 
 Hi there!  
-I created this website for my**Liga Jovem Challenge** project.  
+I created this website for my **Liga Jovem Challenge** project.  
 I'm using **HTML, CSS, and JavaScript**.  
 
 **Disclaimer:** This website was built with some help from AI for responsiveness, design (I'm not that good, honestly), and JavaScript (I'm just getting started).  
