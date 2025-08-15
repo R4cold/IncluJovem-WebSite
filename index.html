@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto IncluJovem</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/style-main.css">
 </head>
+
 <body>
     <header class="hero" id="home">
         <nav class="nav">
@@ -20,31 +24,34 @@
                 <a href="#tell">Contato</a>
                 <a href="#download">Download</a>
             </div>
+            <button id="dark-toggle" class="dark-btn" aria-label="Alternar modo escuro">🌙</button>
         </nav>
         <div class="hero-content">
             <h1>IncluJovem</h1>
-            
             <p>Educação mais acessível, acolhedora e eficaz</p>
             <div class="cta-wrap">
                 <a class="btn btn-solid" href="#tell">Fale Conosco</a>
                 <a class="btn btn-ghost" href="#about">Saiba Mais</a>
             </div>
-            <div class="puzzle-decor"></div>
         </div>
     </header>
-
     <main>
         <section class="section about reveal" id="about">
             <div class="section-inner">
                 <h2>Quem somos</h2>
-                <p>Somos o <strong>IncluJovem</strong>, um projeto que cria soluções acessíveis para apoiar <strong>profissionais da educação</strong> no trabalho com crianças do <strong>espectro autista</strong>, incluindo <strong>TDAH e TDA</strong>. Acreditamos que inclusão nasce da escuta e do cuidado com as diferenças.</p>
+                <p>Somos o <strong>IncluJovem</strong>, um projeto que cria soluções acessíveis para apoiar
+                    <strong>profissionais da educação</strong> no trabalho com crianças do <strong>espectro
+                        autista</strong>, incluindo <strong>TDAH e TDA</strong>. Acreditamos que inclusão nasce da
+                    escuta e do cuidado com as diferenças.</p>
             </div>
         </section>
 
         <section class="section goal reveal" id="goal">
             <div class="section-inner">
                 <h2>Nosso objetivo</h2>
-                <p><strong>Desenvolver recursos de acessibilidade</strong> com linguagem clara, rotinas visuais e ferramentas de apoio que facilitem o ensino e a autonomia de cada estudante, respeitando ritmos e necessidades.</p>
+                <p><strong>Desenvolver recursos de acessibilidade</strong> com linguagem clara, rotinas visuais e
+                    ferramentas de apoio que facilitem o ensino e a autonomia de cada estudante, respeitando ritmos e
+                    necessidades.</p>
             </div>
         </section>
 
@@ -71,7 +78,6 @@
         <section class="section tell reveal" id="tell">
             <div class="section-inner">
                 <h2>Contato</h2>
-                <p>Tem dúvidas, sugestões ou quer acompanhar de perto o <strong>IncluJovem</strong>? Escreva pra gente.</p>
                 <div class="contact-cards">
                     <div class="card contact">
                         <span class="contact-emoji">📧</span>
@@ -94,50 +100,19 @@
         <section class="section download reveal" id="download">
             <div class="section-inner">
                 <h2>Em breve</h2>
-                <p>Aplicativo em fase inicial. Lançaremos uma versão de testes com atualizações frequentes. Acompanhe nossas redes para novidades.</p>
+                <p>Aplicativo em fase inicial. Lançaremos uma versão de testes com atualizações frequentes. Acompanhe
+                    nossas redes para novidades.</p>
                 <a class="btn btn-solid" href="#tell">Quero ser avisado</a>
             </div>
         </section>
     </main>
 
-    <aside class="section social reveal" id="social">
-        <div class="section-inner">
-            <h2>Redes Sociais</h2>
-            <div class="grid grid-social">
-                <a href="#" target="_blank" class="btn social-btn extern">Instagram</a>
-                <a href="#" target="_blank" class="btn social-btn extern">X</a>
-                <a href="#" target="_blank" class="btn social-btn extern">YouTube</a>
-            </div>
-        </div>
-    </aside>
-
     <footer class="footer">
-        <p>Site por <a href="https://github.com/R4cold" target="_blank" class="extern">Gabriel Douglas</a> • <strong>Desafio Liga Jovem</strong> — <strong>IncluJovem</strong></p>
+        <p>Site por <a href="https://github.com/R4cold" target="_blank" class="extern">Gabriel Douglas</a> •
+            <strong>Desafio Liga Jovem</strong> — <strong>IncluJovem</strong></p>
     </footer>
 
-    <script>
-        const toggle = document.querySelector('.menu-toggle');
-        const links = document.querySelector('.nav-links');
-        toggle.addEventListener('click', () => {
-            const active = links.classList.toggle('active');
-            toggle.setAttribute('aria-expanded', active ? 'true' : 'false');
-        });
-        document.querySelectorAll('.nav-links a').forEach(a => {
-            a.addEventListener('click', e => {
-                e.preventDefault();
-                links.classList.remove('active');
-                const id = a.getAttribute('href');
-                const el = document.querySelector(id);
-                const y = el.getBoundingClientRect().top + window.scrollY - 80;
-                window.scrollTo({ top: y, behavior: 'smooth' });
-            });
-        });
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('reveal-in');
-            });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    </script>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>
