@@ -85,13 +85,14 @@ body {
 }
 
 .hero-content {
-  margin-top: 10vh;
+  margin-top: 40vh;
 }
 
 .hero-content h1 {
   font-family: var(--font-title);
   font-size: 4rem;
   margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.63);
 }
 
 .hero-content p {
@@ -264,9 +265,12 @@ body {
 
 .card img {
   width: 100%;
+  height: 250px; /* altura fixa para todas */
+  object-fit: cover; /* mantém proporção cortando excesso */
   border-radius: var(--radius);
   margin-bottom: 1rem;
 }
+
 
 .chip {
   display: inline-block;
